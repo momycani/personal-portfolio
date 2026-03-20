@@ -1,0 +1,135 @@
+.home {
+  min-height: calc(100vh - 79px);
+  background: linear-gradient(to bottom, #ffffff, #f7f3ef);
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 24px 80px;
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  max-width: 760px;
+}
+
+.hero__eyebrow {
+  margin: 0 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.hero__title {
+  margin: 0 0 24px;
+  font-size: 56px;
+  line-height: 1.08;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.hero__text {
+  margin: 0 0 36px;
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--text-light);
+  max-width: 680px;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  height: 50px;
+  padding: 0 24px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.hero__button--primary {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.hero__button--primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.hero__button--secondary {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #111827;
+}
+
+.hero__button--secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 932px) {
+  .hero {
+    padding: 84px 24px 72px;
+  }
+
+  .hero__title {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    min-height: auto;
+  }
+
+  .hero {
+    padding: 72px 20px 60px;
+  }
+
+  .hero__title {
+    font-size: 38px;
+  }
+
+  .hero__text {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 56px 18px 48px;
+  }
+
+  .hero__title {
+    font-size: 31px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__button {
+    width: 100%;
+  }
+}
