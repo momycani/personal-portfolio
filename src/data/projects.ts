@@ -28,4 +28,22 @@ export const projects: Project[] = [
     live: "https://mod-6-final-project.vercel.app/",
     github: "https://github.com/momycani/MOD-6-FINAL-PROJECT",
   },
+  {
+    title: "Ultraverse Market",
+    description:
+      "A movie discovery application that allows users to browse, search, and explore films using real-time API data with responsice UI.",
+    tech: ["React", "JavaScript", "API", "CSS"],
+    image: "/3593-v2.jpg", // from public folder
+    live: "https://beth-kenward-internship-pr4z.vercel.app/",
+    github: "https://github.com/momycani/Beth-Kenward---Internship",
+  },
+  {
+    title: " Netflix Clone",
+    description:
+      "A movie discovery application that allows users to browse, search, and explore films using real-time API data with responsice UI.",
+    tech: ["React", "JavaScript", "API", "CSS"],
+    image: "/3593-v2.jpg", // from public folder
+    live: "https://mod-6-netflix-clone.vercel.app/",
+    github: "https://github.com/momycani/MOD-6-NETFLIX-CLONE",
+  },
 ];
