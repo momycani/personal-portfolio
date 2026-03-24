@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { HiOutlineDocumentText } from "react-icons/hi";
 import "../styles/home.css";
 
 export default function Home() {
@@ -56,9 +57,17 @@ export default function Home() {
             >
               <HiOutlineMail />
             </a>
-          </div>        
-
-          
+            <a
+              href="/Beth-Kenward-Resume.pdf"
+              className="hero__icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Download Resume"
+            >
+              <HiOutlineDocumentText />
+            </a>
+            
+          </div>                
         </div>  
        
       </section>
