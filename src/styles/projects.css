@@ -1,6 +1,6 @@
 .projects {
-  padding: 80px 24px;
-  background: var(--bg-soft);
+  padding: 80px 24px 100px;
+  background: #faf7f3;
   min-height: calc(100vh - 79px);
 }
 
@@ -19,6 +19,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 28px;
+}
+
+.projects__subtitle {
+  font-size: 16px;
+  color: var(--text-light);
+  margin-bottom: 32px;
+  max-width: 600px;
 }
 
 /* CARD */

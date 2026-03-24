@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 import "../styles/home.css";
 
 export default function Home() {
@@ -22,11 +24,43 @@ export default function Home() {
             <Link to="/projects" className="hero__button hero__button--primary">
               View Projects
             </Link>
-            <Link to="/contact" className="hero__button hero__button--secondary">
-              Contact Me
-            </Link>
           </div>
-        </div>
+
+          <div className="hero__socials">
+            <a
+              href="https://github.com/momycani"
+              target="_blank"
+              rel="noreferrer"
+              className="hero__icon"
+              title="GitHub"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/elizabeth-kenward-4b123023a/"
+              target="_blank"
+              rel="noreferrer"
+              className="hero__icon"
+              title="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              href="mailto:bethkenward3@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Beth"
+              className="hero__icon"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Send me an email"
+            >
+              <HiOutlineMail />
+            </a>
+          </div>        
+
+          
+        </div>  
+       
       </section>
     </main>
   );

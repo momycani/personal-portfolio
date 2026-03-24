@@ -1,0 +1,156 @@
+.about {
+  min-height: calc(100vh - 79px);
+  padding: 80px 24px 100px;
+  background: linear-gradient(to bottom, #ffffff, #f7f3ef);
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__header {
+  max-width: 760px;
+  margin-bottom: 48px;
+}
+
+.about__eyebrow {
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.about__title {
+  margin: 0 0 20px;
+  font-size: 46px;
+  line-height: 1.1;
+  color: var(--text-main);
+}
+
+.about__intro {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--text-light);
+  max-width: 700px;
+}
+
+.about__content {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.about__text {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+.about__text p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: var(--text-light);
+}
+
+.about__text p + p {
+  margin-top: 20px;
+}
+
+.about__card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.about__card-title {
+  margin: 0 0 20px;
+  font-size: 22px;
+  color: var(--text-main);
+}
+
+.about__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about__tag {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(205, 133, 63, 0.12);
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about__image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about__image {
+  width: 220px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 932px) {
+  .about__title {
+    font-size: 38px;
+  }
+
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+
+  .about__image-wrapper {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 72px 20px 80px;
+  }
+
+  .about__title {
+    font-size: 32px;
+  }
+
+  .about__intro {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .about__text,
+  .about__card {
+    padding: 24px;
+  }
+
+  .about__text p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 56px 18px 64px;
+  }
+
+  .about__title {
+    font-size: 28px;
+  }
+}
