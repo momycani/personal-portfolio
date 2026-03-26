@@ -16,9 +16,7 @@ export default function Home() {
             I build clean, responsive web experiences.
           </h1>
           <p className="hero__text">
-            I create modern websites and applications using React, TypeScript,
-            and thoughtful UI design. Explore my work and see how I bring ideas
-            to life through polished, user-friendly interfaces.
+            I create modern web applications using React and TypeScript, focusing on intuitive UI and seamless user experiences. Explore my work to see how I bring ideas to life through polished, user-friendly interfaces.
           </p>
 
           <div className="hero__buttons">
