@@ -1,5 +1,5 @@
 .home {
-  min-height: calc(100vh - 79px);
+  min-height: calc(100dvh - 79px);
   background: linear-gradient(to bottom, #ffffff, #f7f3ef);
 }
 
@@ -119,7 +119,7 @@
 
 @media (max-width: 768px) {
   .home {
-    min-height: auto;
+    min-height: calc(100dvh - 79px);
   }
 
   .hero {
