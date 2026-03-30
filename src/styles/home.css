@@ -1,12 +1,12 @@
 .home {
-  min-height: calc(100dvh - 79px);
+  padding-bottom: 40px;
   background: linear-gradient(to bottom, #ffffff, #f7f3ef);
 }
 
 .hero {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 24px 80px;
+  padding: 80px 24px 63px;
   display: flex;
   align-items: center;
 }
@@ -108,6 +108,10 @@
 }
 
 @media (max-width: 932px) {
+  .home {
+    min-height: 85vh;
+  }
+
   .hero {
     padding: 84px 24px 72px;
   }
@@ -118,12 +122,8 @@
 }
 
 @media (max-width: 768px) {
-  .home {
-    min-height: calc(100dvh - 79px);
-  }
-
   .hero {
-    padding: 72px 20px 60px;
+    padding: 72px 20px 36px;
   }
 
   .hero__title {

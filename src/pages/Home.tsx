@@ -9,7 +9,7 @@ export default function Home() {
     <main className="home">
       <section className="hero">
         <div className="hero__content">
-          <p className="hero__eyebrow">Front-End Developer</p>
+          <p className="hero__eyebrow">Project & Operations Coordinator | Technical Background</p>
           <h1 className="hero__title">
             Hi, I'm Beth.
             <br />
@@ -23,51 +23,8 @@ export default function Home() {
             <Link to="/projects" className="hero__button hero__button--primary">
               View Projects
             </Link>
-          </div>
-
-          <div className="hero__socials">
-            <a
-              href="https://github.com/momycani"
-              target="_blank"
-              rel="noreferrer"
-              className="hero__icon"
-              title="GitHub"
-            >
-              <FaGithub />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/elizabeth-kenward-4b123023a/"
-              target="_blank"
-              rel="noreferrer"
-              className="hero__icon"
-              title="LinkedIn"
-            >
-              <FaLinkedin />
-            </a>
-
-            <a
-              href="mailto:bethkenward3@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Beth"
-              className="hero__icon"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Send me an email"
-            >
-              <HiOutlineMail />
-            </a>
-            <a
-              href="/Beth-Kenward-Resume.pdf"
-              className="hero__icon"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Download Resume"
-            >
-              <HiOutlineDocumentText />
-            </a>
-            
-          </div>                
-        </div>  
-       
+          </div>          
+        </div>         
       </section>
     </main>
   );

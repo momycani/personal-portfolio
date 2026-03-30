@@ -7,10 +7,9 @@ export default function About() {
       <section className="about__container">
         <div className="about__header">
           <p className="about__eyebrow">About Me</p>
-          <h1 className="about__title">Building thoughtful, user-friendly web experiences.</h1>
+          <h1 className="about__title">Coordinating projects and building thoughtful, user-friendly web experiences.</h1>
           <p className="about__intro">
-            I'm Beth, a front-end developer focused on creating clean, responsive,
-            and intuitive interfaces with React, TypeScript, and modern web tools.
+            I'm Beth, a Project & Operations Coordinator with a background in front-end development, specializing in coordinating workflows and building user-friendly applications.
           </p>
         </div>
 
@@ -47,17 +46,17 @@ export default function About() {
           <aside className="about__card">
             <h2 className="about__card-title">Skills & Tools</h2>
 
-            <div className="about__tags">
-              <span className="about__tag">React</span>
-              <span className="about__tag">TypeScript</span>
-              <span className="about__tag">JavaScript</span>
-              <span className="about__tag">Firebase</span>
-              <span className="about__tag">CSS</span>
-              <span className="about__tag">Responsive Design</span>
-              <span className="about__tag">APIs</span>
-              <span className="about__tag">Vercel</span>
-              <span className="about__tag">GitHub</span>
-            </div>
+          <div className="about__tags">
+            <span className="about__tag">Project Coordination</span>
+            <span className="about__tag">Process Improvement</span>
+            <span className="about__tag">Cross-Functional Collaboration</span>
+            <span className="about__tag">React</span>
+            <span className="about__tag">TypeScript</span>
+            <span className="about__tag">JavaScript</span>
+            <span className="about__tag">REST APIs</span>
+            <span className="about__tag">Firebase</span>
+            <span className="about__tag">GitHub</span>
+          </div>
           </aside>
         </div>
       </section>
