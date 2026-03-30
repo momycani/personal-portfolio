@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { HiOutlineDocumentText } from "react-icons/hi";
 import "../styles/home.css";
 
 export default function Home() {
