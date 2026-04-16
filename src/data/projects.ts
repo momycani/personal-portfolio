@@ -12,6 +12,14 @@ type Project = {
 
 export const projects: Project[] = [
   {
+    title: "ProjectOps Dashboard",
+    description: "A project management case study application built with React and TypeScript that simulates end-to-end delivery tracking for a website redesign and client portal launch.",
+    tech: ["React", "TypeScript", "Recharts", "React Router", "CSS", "Vercel"],
+    image: "/projectops.png",
+    live: "https://projectops-dashboard.vercel.app/",
+    github: "https://github.com/momycani/projectops-dashboard",
+  },
+  {
     title: "Skinstric Internship",
     description:
       "Built a responsive React + TypeScript application for AI-powered skin analysis, allowing users to upload or capture images and receive real-time results. Integrated REST APIs, implemented dynamic routing with React Router, and enhanced user experience with responsive custom CSS and optimized component structure.",
