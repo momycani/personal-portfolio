@@ -1,5 +1,5 @@
-
 import "../styles/about.css";
+import { FaAward } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -60,6 +60,46 @@ export default function About() {
           </aside>
         </div>
       </section>
+      <section className="about__certifications">
+        <h2 className="about__certifications-title">Certifications</h2>
+
+        <div className="about__certifications-list">
+          <div className="about__certification">
+            <div className="about__certification-header">
+              <FaAward className="about__certification-icon" />
+              <div>
+                <p className="about__certification-name">
+                  Frontend Simplified (FES Institute)
+                </p>
+                <p className="about__certification-detail">
+                  Frontend Development Certificate
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="/fes-certificate.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__certification-link"
+            >
+              View Certificate
+            </a>
+          </div>
+
+          <div className="about__certification">
+            <div className="about__certification-header">
+              <FaAward className="about__certification-icon" />
+              <div>
+                <p className="about__certification-name">AI Certification - Coursiv.io</p>
+                <p className="about__certification-detail">Focus: ChatGPT & Practical AI Tooling</p>
+                <p className="about__certification-status">In Progress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }

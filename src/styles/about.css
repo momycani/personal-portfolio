@@ -102,6 +102,73 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
+.about__certifications {
+  margin-top: 3rem;
+}
+
+.about__certifications-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about__certifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about__certification {
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background-color: #fafafa;  
+}
+
+.about__certification-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.about__certification-icon {
+  color: peru;
+  font-size: 1.1rem;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.about__certification-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.about__certification-detail {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.about__certification-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: peru;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.about__certification-link:hover {
+  text-decoration: underline;
+}
+
+.about__certification-status {
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
 @media (max-width: 932px) {
   .about__title {
     font-size: 38px;
