@@ -12,6 +12,30 @@ type Project = {
 
 export const projects: Project[] = [
   {
+    title: "EnablementOps Content Dashboard",
+    description: "A Seismic-inspired sales enablement operations dashboard that tracks content approvals, seller training readiness, outdated assets, and CRM-style content recommendations. Built to demonstrate content governance, workflow visibility, operational tracking, and reporting for go-to-market teams.",
+    tech: ["React", "TypeScript", "Vite", "CSS", "React Icons", "Vercel"],
+    image: "/enablementops.png",
+    live: "https://enablementops-content-dashboard.vercel.app/",
+    github: "https://github.com/momycani/enablementops-content-dashboard",
+  },
+  {
+    title: "Client Onboarding Workflow Dashboard",
+    description: "Built a React + TypeScript onboarding operations dashboard that simulates real-world client implementation workflows, including automated project health tracking, milestone and task management, risk escalation workflows, onboarding portfolio views, and dynamic progress calculations with persistent local storage state management.",
+    tech: ["React", "TypeScript", "Vite", "React Router", "JavaScript (ES6+)", "HTML5", "CSS3", "Local Storage API", "Git", "GitHub", "Vercel"],
+    image: "/clientonboarding.png",
+    live: "https://client-onboarding-workflow-dashboar.vercel.app/",
+    github: "https://github.com/momycani/client-onboarding-workflow-dashboard",
+  },
+  {
+    title: "DocuFlow Template Manager",
+    description: "Built a React + TypeScript workflow dashboard that simulates the lifecycle of insurance document templates, including schema field mapping, QA test plans, Jira-style request triage, rollout tracking, and debugging runbooks.",
+    tech: ["React", "TypeScript", "Vite", "React Router", "JavaScript (ES6+)", "HTML5", "CSS3", "JSON (schema-driven data)", "Git", "GitHub", "Vercel"],
+    image: "/docuflow_template.png",
+    live: "https://docuflow-template-manager.vercel.app/",
+    github: "https://github.com/momycani/docuflow-template-manager",
+  },
+  {
     title: "ProjectOps Dashboard",
     description: "A project management case study application built with React and TypeScript that simulates end-to-end delivery tracking for a website redesign and client portal launch.",
     tech: ["React", "TypeScript", "Recharts", "React Router", "CSS", "Vercel"],
