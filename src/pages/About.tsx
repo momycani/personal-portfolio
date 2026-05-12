@@ -195,7 +195,6 @@ export default function About() {
               View Certificate
             </a>
           </div>
-
           <div className="about__certification">
             <div className="about__certification-header">
               <FaAward className="about__certification-icon" />
@@ -203,6 +202,31 @@ export default function About() {
               <div>
                 <p className="about__certification-name">
                   Perplexity Certification — Coursiv.io
+                </p>
+
+                <p className="about__certification-detail">
+                  Practical AI Tooling & Workflow Applications
+                </p>
+              </div>
+            </div>
+
+            <a
+              href="/Perplexity.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="about__certification-link"
+            >
+              View Certificate
+            </a>
+          </div>
+
+          <div className="about__certification">
+            <div className="about__certification-header">
+              <FaAward className="about__certification-icon" />
+
+              <div>
+                <p className="about__certification-name">
+                  Gemini Certification — Coursiv.io
                 </p>
 
                 <p className="about__certification-detail">
