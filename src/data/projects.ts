@@ -12,6 +12,14 @@ type Project = {
 
 export const projects: Project[] = [
   {
+    title: "CredentialFlow Dashboard",
+    description: "CredentialFlow Dashboard is a React and TypeScript healthcare operations project inspired by Medical Staff Office credentialing workflows, featuring mock provider data, search/filter/sort functionality, risk indicators, priority queue logic, smart review notes, and responsive dashboard design..",
+    tech: ["React", "TypeScript", "Vite", "Mock Data", " Healthcare Workflow", "Responsive Dashboard"],
+    image: "/credentialflow.png",
+    live: "https://credentialflow-dashboard.vercel.app/",
+    github: "https://github.com/momycani/credentialflow-dashboard",
+  },
+  {
     title: "EnablementOps Content Dashboard",
     description: "A Seismic-inspired sales enablement operations dashboard that tracks content approvals, seller training readiness, outdated assets, and CRM-style content recommendations. Built to demonstrate content governance, workflow visibility, operational tracking, and reporting for go-to-market teams.",
     tech: ["React", "TypeScript", "Vite", "CSS", "React Icons", "Vercel"],
