@@ -116,129 +116,112 @@ export default function About() {
       </section>
 
       <section className="about__certifications">
-        <h2 className="about__certifications-title">
-          Certifications & Learning
-        </h2>
+  <div className="about__certifications-header">
+    <h2 className="about__certifications-title">
+      Certifications & Learning
+    </h2>
 
-        <div className="about__certifications-list">
-          <div className="about__certification">
-            <div className="about__certification-header">
-              <FaAward className="about__certification-icon" />
+    <p className="about__certifications-intro">
+      I continue building practical skills across frontend development,
+      AI-powered workflows, documentation, research, and modern productivity
+      tools.
+    </p>
+  </div>
 
-              <div>
-                <p className="about__certification-name">
-                  Frontend Simplified (FES Institute)
-                </p>
+  <div className="about__certifications-grid">
+    {[
+      {
+        name: "Frontend Simplified",
+        provider: "FES Institute",
+        detail: "Frontend Development Certificate",
+        href: "/fes-certificate.pdf",
+      },
+      {
+        name: "ChatGPT Certification",
+        provider: "Coursiv.io",
+        detail: "Practical AI Tooling & Workflow Applications",
+        href: "/ChatGPT.pdf",
+      },
+      {
+        name: "Claude Certification",
+        provider: "Coursiv.io",
+        detail: "Practical AI Tooling & Workflow Applications",
+        href: "/Claude.pdf",
+      },
+      {
+        name: "Perplexity Certification",
+        provider: "Coursiv.io",
+        detail: "Practical AI Tooling & Workflow Applications",
+        href: "/Perplexity.pdf",
+      },
+      {
+        name: "Gemini Certification",
+        provider: "Coursiv.io",
+        detail: "Practical AI Tooling & Workflow Applications",
+        href: "/Gemini.pdf",
+      },
+      {
+        name: "Midjourney Certification",
+        provider: "Coursiv.io",
+        detail: "Practical AI Tooling & Workflow Applications",
+        href: "/Midjourney.pdf",
+      },
+      {
+        name: "Canva AI Certification",
+        provider: "Coursiv.io",
+        detail: "Practical AI Tooling & Workflow Applications",
+        href: "/Canva AI.pdf",
+      },
+      {
+        name: "VEO Certification",
+        provider: "Coursiv.io",
+        detail: "Practical AI Tooling & Workflow Applications",
+        href: "/Veo.pdf",
+      },
+      {
+        name: "Kling Certification",
+        provider: "Coursiv.io",
+        detail: "Practical AI Research & Productivity Tooling",
+        status: "In Progress",
+      },
+    ].map((certificate) => (
+      <article className="about__certification-card" key={certificate.name}>
+        <div className="about__certification-card-header">
+          <FaAward className="about__certification-icon" />
 
-                <p className="about__certification-detail">
-                  Frontend Development Certificate
-                </p>
-              </div>
-            </div>
+          <div>
+            <h3 className="about__certification-name">
+              {certificate.name}
+            </h3>
 
-            <a
-              href="/fes-certificate.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="about__certification-link"
-            >
-              View Certificate
-            </a>
-          </div>
-
-          <div className="about__certification">
-            <div className="about__certification-header">
-              <FaAward className="about__certification-icon" />
-
-              <div>
-                <p className="about__certification-name">
-                  ChatGPT Certification — Coursiv.io
-                </p>
-
-                <p className="about__certification-detail">
-                  Practical AI Tooling & Workflow Applications
-                </p>
-              </div>
-            </div>
-
-            <a
-              href="/ChatGPT.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="about__certification-link"
-            >
-              View Certificate
-            </a>
-          </div>
-
-          <div className="about__certification">
-            <div className="about__certification-header">
-              <FaAward className="about__certification-icon" />
-
-              <div>
-                <p className="about__certification-name">
-                  Claude Certification — Coursiv.io
-                </p>
-
-                <p className="about__certification-detail">
-                  Practical AI Tooling & Workflow Applications
-                </p>
-              </div>
-            </div>
-
-            <a
-              href="/Claude.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="about__certification-link"
-            >
-              View Certificate
-            </a>
-          </div>
-          <div className="about__certification">
-            <div className="about__certification-header">
-              <FaAward className="about__certification-icon" />
-
-              <div>
-                <p className="about__certification-name">
-                  Perplexity Certification — Coursiv.io
-                </p>
-
-                <p className="about__certification-detail">
-                  Practical AI Tooling & Workflow Applications
-                </p>
-              </div>
-            </div>
-
-            <a
-              href="/Perplexity.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="about__certification-link"
-            >
-              View Certificate
-            </a>
-          </div>
-
-          <div className="about__certification">
-            <div className="about__certification-header">
-              <FaAward className="about__certification-icon" />
-
-              <div>
-                <p className="about__certification-name">
-                  Gemini Certification — Coursiv.io
-                </p>
-
-                <p className="about__certification-detail">
-                  Practical AI Research & Productivity Tooling
-                </p>
-
-                <p className="about__certification-status">In Progress</p>
-              </div>
-            </div>
+            <p className="about__certification-provider">
+              {certificate.provider}
+            </p>
           </div>
         </div>
-      </section>
+
+        <p className="about__certification-detail">
+          {certificate.detail}
+        </p>
+
+        {certificate.status ? (
+          <span className="about__certification-status">
+            {certificate.status}
+          </span>
+        ) : (
+          <a
+            href={certificate.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="about__certification-link"
+          >
+            View Certificate
+          </a>
+        )}
+      </article>
+    ))}
+  </div>
+</section>
     </main>
   );
 }
