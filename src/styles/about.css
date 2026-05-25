@@ -1,11 +1,11 @@
 .about {
   min-height: calc(100vh - 79px);
-  padding: 80px 24px 100px;
+  padding: 40px 24px 100px;
   background: linear-gradient(to bottom, #ffffff, #f7f3ef);
 }
 
 .about__container {
-  max-width: 1200px;
+  max-width: 1650px;
   margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@
 
 .about__eyebrow {
   margin: 0 0 14px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -25,13 +25,13 @@
 
 .about__title {
   margin: 0 0 20px;
-  font-size: 46px;
+  font-size: 56px;
   line-height: 1.1;
   color: var(--text-main);
 }
 
 .about__intro {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.75;
   color: var(--text-light);
   max-width: 700px;
@@ -40,7 +40,7 @@
 .about__content {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
-  gap: 32px;
+  gap: 150px;
   align-items: start;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .about__text p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.9;
   color: var(--text-light);
 }
@@ -94,12 +94,24 @@
   justify-content: center;
 }
 
-.about__image {
-  width: 220px;
-  border-radius: 16px;
-  object-fit: cover;
+.about__profile-card {
+  background: #ffffff;
   border: 1px solid var(--border);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  padding: 26px;
+  width: 330px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  align-self: start;
+  margin-top: -2px;
+}
+
+.about__image {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin: 0 auto 20px;
 }
 
 /* ABOUT PAGE - CERTIFICATIONS */
@@ -206,7 +218,17 @@
 }
 
 /* ABOUT PAGE - CERTIFICATIONS RESPONSIVE */
-@media (max-width: 950px) {
+@media (max-width: 1400px) {
+  .about__container {
+    padding: 0 24px;
+  }
+  
+  .about__title {
+    font-size: 50px;    
+  }
+}
+
+@media (max-width: 768px) {
   .about__certifications-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -216,10 +238,6 @@
   .about__certifications {
     width: min(100% - 1.25rem, 1120px);
     margin-top: 3rem;
-  }
-
-  .about__certifications-grid {
-    grid-template-columns: 1fr;
   }
 
   .about__certification-card {

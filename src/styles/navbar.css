@@ -8,9 +8,9 @@
 }
 
 .navbar__container {
-  max-width: 1200px;
+  max-width: 1650px;
   margin: 0 auto;
-  padding: 18px 24px;
+  padding: 6px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,7 +54,7 @@
   position: relative;
   text-decoration: none;
   color: #1f2937;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   transition: color 0.2s ease;
 }

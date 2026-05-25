@@ -80,13 +80,12 @@ export default function About() {
             </p>
           </div>
 
-          <div className="about__image-wrapper">
-            <img
-              src="/headshot.jpg"
-              alt="Beth Kenward"
-              className="about__image"
-            />
-          </div>
+          <aside className="about__profile-card">
+  <img src="/headshot.jpg" alt="Beth Kenward" className="about__image" />
+  <h2>Elizabeth “Beth” Kenward</h2>
+  <p>Frontend Developer</p>
+  <p>Project & Operations Coordinator</p>
+</aside>
 
           <aside className="about__card">
             <h2 className="about__card-title">Skills & Tools</h2>
