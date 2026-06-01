@@ -1,108 +1,104 @@
-import summaristLogo from "../assets/summarist-logo.png";
-import UndrawBooks from "../assets/Undraw_Books.svg";
+export type ProjectCategory = "dashboards" | "apps" | "clones";
 
-type Project = {
+export type Project = {
   title: string;
   description: string;
   tech: string[];
   image: string;
   live: string;
   github: string;
+  category: ProjectCategory;
 };
 
 export const projects: Project[] = [
   {
     title: "CredentialFlow Dashboard",
-    description: "CredentialFlow Dashboard is a React and TypeScript healthcare operations project inspired by Medical Staff Office credentialing workflows, featuring mock provider data, search/filter/sort functionality, risk indicators, priority queue logic, smart review notes, and responsive dashboard design..",
-    tech: ["React", "TypeScript", "Vite", "Mock Data", " Healthcare Workflow", "Responsive Dashboard"],
+    description:
+      "A React and TypeScript healthcare operations project inspired by Medical Staff Office credentialing workflows with mock provider data, search, filters, risk indicators, and review notes.",
+    tech: ["React", "TypeScript", "Vite", "Mock Data", "Healthcare Workflow"],
     image: "/credentialflow.png",
     live: "https://credentialflow-dashboard.vercel.app/",
     github: "https://github.com/momycani/credentialflow-dashboard",
+    category: "dashboards",
   },
   {
     title: "EnablementOps Content Dashboard",
-    description: "A Seismic-inspired sales enablement operations dashboard that tracks content approvals, seller training readiness, outdated assets, and CRM-style content recommendations. Built to demonstrate content governance, workflow visibility, operational tracking, and reporting for go-to-market teams.",
-    tech: ["React", "TypeScript", "Vite", "CSS", "React Icons", "Vercel"],
+    description:
+      "A sales enablement operations dashboard tracking content approvals, seller training readiness, outdated assets, and CRM-style recommendations for go-to-market teams.",
+    tech: ["React", "TypeScript", "Vite", "CSS", "React Icons"],
     image: "/enablementops.png",
     live: "https://enablementops-content-dashboard.vercel.app/",
     github: "https://github.com/momycani/enablementops-content-dashboard",
+    category: "dashboards",
   },
   {
     title: "Client Onboarding Workflow Dashboard",
-    description: "Built a React + TypeScript onboarding operations dashboard that simulates real-world client implementation workflows, including automated project health tracking, milestone and task management, risk escalation workflows, onboarding portfolio views, and dynamic progress calculations with persistent local storage state management.",
-    tech: ["React", "TypeScript", "Vite", "React Router", "JavaScript (ES6+)", "HTML5", "CSS3", "Local Storage API", "Git", "GitHub", "Vercel"],
+    description:
+      "An onboarding operations dashboard simulating real-world client implementation with health tracking, milestone management, risk escalation, and persistent local-storage state.",
+    tech: ["React", "TypeScript", "React Router", "Local Storage", "CSS"],
     image: "/clientonboarding.png",
     live: "https://client-onboarding-workflow-dashboar.vercel.app/",
     github: "https://github.com/momycani/client-onboarding-workflow-dashboard",
+    category: "dashboards",
   },
   {
     title: "DocuFlow Template Manager",
-    description: "Built a React + TypeScript workflow dashboard that simulates the lifecycle of insurance document templates, including schema field mapping, QA test plans, Jira-style request triage, rollout tracking, and debugging runbooks.",
-    tech: ["React", "TypeScript", "Vite", "React Router", "JavaScript (ES6+)", "HTML5", "CSS3", "JSON (schema-driven data)", "Git", "GitHub", "Vercel"],
-    image: "/docuflow_template.png",
+    description:
+      "A workflow dashboard simulating the lifecycle of insurance document templates with schema mapping, QA test plans, request triage, rollout tracking, and debugging runbooks.",
+    tech: ["React", "TypeScript", "React Router", "JSON", "CSS"],
+    image: "/docuflow.png",
     live: "https://docuflow-template-manager.vercel.app/",
     github: "https://github.com/momycani/docuflow-template-manager",
+    category: "dashboards",
   },
   {
     title: "ProjectOps Dashboard",
-    description: "A project management case study application built with React and TypeScript that simulates end-to-end delivery tracking for a website redesign and client portal launch.",
-    tech: ["React", "TypeScript", "Recharts", "React Router", "CSS", "Vercel"],
+    description:
+      "A project-management case study app that simulates end-to-end delivery tracking for a website redesign and client portal launch.",
+    tech: ["React", "TypeScript", "Recharts", "React Router", "CSS"],
     image: "/projectops.png",
     live: "https://projectops-dashboard.vercel.app/",
     github: "https://github.com/momycani/projectops-dashboard",
+    category: "dashboards",
   },
   {
     title: "Skinstric Internship",
     description:
-      "Built a responsive React + TypeScript application for AI-powered skin analysis, allowing users to upload or capture images and receive real-time results. Integrated REST APIs, implemented dynamic routing with React Router, and enhanced user experience with responsive custom CSS and optimized component structure.",
-    tech: ["React", "TypeScript", "REST APIs", "CSS", "React Router", "Vite"],
+      "A responsive React and TypeScript app for AI-powered skin analysis with image upload/capture flow, dynamic routing, and optimized component structure.",
+    tech: ["React", "TypeScript", "REST APIs", "CSS", "React Router"],
     image: "/skinstric_cover.jpg",
     live: "https://beth-skinstric-internship.vercel.app/",
     github: "https://github.com/momycani/skinstric-internship",
+    category: "apps",
   },
   {
     title: "Summarist",
     description:
-      "Built a responsive React + TypeScript book summary platform with authentication, subscription gating, audio playback, and dynamic book data. Implemented Firebase-based user flows, client-side routing, and reusable components to create a polished reading and listening experience.",
-    tech: ["React", "TypeScript", "Firebase", "CSS", "React Router", "React Icons"],
-    image: summaristLogo,
+      "A responsive book-summary platform with authentication, subscription gating, audio playback, Firebase user flows, client-side routing, and reusable components.",
+    tech: ["React", "TypeScript", "Firebase", "CSS", "React Router"],
+    image: "/summarist-home.png",
     live: "https://beth-summarist-app.vercel.app/",
     github: "https://github.com/momycani/summarist-app",
-  },
-  {
-    title: "Ultraverse Market",
-    description:
-      "Developed a responsive React application for exploring digital art collections and artist profiles. Implemented dynamic routing between pages, integrated REST APIs for real-time data, and built reusable components to display artwork and metadata in a clean, user-friendly interface.",
-    tech: ["React", "JavaScript", "REST APIs", "CSS", "React Router"],
-    image: "/nft.png",
-    live: "https://beth-ultraverse-market.vercel.app/",
-    github: "https://github.com/momycani/ultraverse-market",
+    category: "apps",
   },
   {
     title: "Movie Explorer",
     description:
-      "Built a responsive React application for discovering and exploring movies using real-time data from external REST APIs. Implemented search functionality, dynamic content rendering, and reusable components to deliver an engaging and intuitive user experience.",
+      "A React app for discovering and exploring movies using real-time data from external REST APIs with search, dynamic content rendering, and reusable components.",
     tech: ["React", "JavaScript", "REST APIs", "CSS"],
     image: "/3593-v2.jpg",
-    live: "https://beth-movie-explorer.vercel.app/",
+   live: "https://beth-movie-explorer.vercel.app/",
     github: "https://github.com/momycani/movie-explorer",
+    category: "apps",
   },
   {
     title: "Netflix Clone",
     description:
-      "Developed a responsive React application for browsing, searching, and exploring movies using real-time data from external REST APIs. Built reusable components and dynamic rendering patterns to recreate a familiar streaming-style user experience.",
+      "A responsive React app for browsing, searching, and exploring movies using real-time REST API data with reusable components and dynamic rendering.",
     tech: ["React", "JavaScript", "REST APIs", "CSS"],
     image: "/netflix-logo.png",
     live: "https://beth-netflix-clone.vercel.app/",
     github: "https://github.com/momycani/netflix-clone",
-  },
-  {
-    title: "Library",
-    description:
-      "Developed a responsive React application for browsing and managing a digital book library. Implemented dynamic data fetching from external REST APIs, reusable component architecture, and client-side routing for seamless navigation, then deployed the application to Vercel for production.",
-    tech: ["React", "JavaScript", "REST APIs", "CSS", "React Router"],
-    image: UndrawBooks,
-    live: "https://beth-library.vercel.app/",
-    github: "https://github.com/momycani/library",
+    category: "clones",
   },
 ];

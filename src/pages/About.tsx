@@ -1,9 +1,66 @@
+import { FiAward } from "react-icons/fi";
 import "../styles/about.css";
-import { FaAward } from "react-icons/fa";
+
+const certifications = [
+  {
+    title: "Frontend Simplified",
+    source: "FES Institute",
+    description: "Frontend Development Certificate",
+    file: "/Frontend-Simplified-Certificate.pdf",
+  },
+  {
+    title: "ChatGPT Certification",
+    source: "Coursiv.io",
+    description: "Practical AI Tooling & Workflow Applications",
+    file: "/ChatGPT.pdf",
+  },
+  {
+    title: "Claude Certification",
+    source: "Coursiv.io",
+    description: "Practical AI Tooling & Workflow Applications",
+    file: "/Claude.pdf",
+  },
+  {
+    title: "Perplexity Certification",
+    source: "Coursiv.io",
+    description: "Practical AI Tooling & Workflow Applications",
+    file: "/Perplexity.pdf",
+  },
+  {
+    title: "Gemini Certification",
+    source: "Coursiv.io",
+    description: "Practical AI Tooling & Workflow Applications",
+    file: "/Gemini.pdf",
+  },
+  {
+    title: "Midjourney Certification",
+    source: "Coursiv.io",
+    description: "Practical AI Tooling & Workflow Applications",
+    file: "/Midjourney.pdf",
+  },
+  {
+    title: "Canva AI Certification",
+    source: "Coursiv.io",
+    description: "Practical AI Tooling & Workflow Applications",
+    file: "/Canva-AI.pdf",
+  },
+  {
+    title: "Veo Certification",
+    source: "Coursiv.io",
+    description: "Practical AI Tooling & Workflow Applications",
+    file: "/Veo.pdf",
+  },
+  {
+    title: "Kling Certification",
+    source: "In Progress",
+    description: "AI video generation workflow training",
+    file: "",
+  },
+];
 
 export default function About() {
   return (
-    <main className="about">
+    <main id="about" className="about">
       <section className="about__container">
         <div className="about__header">
           <p className="about__eyebrow">About Me</p>
@@ -14,10 +71,9 @@ export default function About() {
           </h1>
 
           <p className="about__intro">
-            I'm Beth, a Frontend Developer and Project & Operations Coordinator
-            with a background in workflow management, process improvement,
-            administrative support, and building practical applications that
-            solve real business problems.
+            A Frontend Developer and Project & Operations Coordinator with a
+            background in workflow management, process improvement, and building
+            practical applications that solve real business problems.
           </p>
         </div>
 
@@ -49,178 +105,147 @@ export default function About() {
             </p>
 
             <p>
-              Many of my projects reflect the type of work I have supported
+              Many of my projects reflect the type of work I’ve supported
               throughout my career, including dashboards, workflow systems,
-              onboarding tools, project tracking, documentation tools, and
-              user-friendly interfaces that make information easier to manage
-              and understand.
+              onboarding tools, project tracking, and interfaces that make
+              information easier to manage and understand.
             </p>
 
             <p>
-              I have built applications that include authentication, API
-              integrations, searchable data, personal libraries, workflow
-              tracking, responsive layouts, and clean front-end architecture. I
-              enjoy refining details, improving user flows, and creating tools
-              that feel polished, approachable, and useful.
-            </p>
-
-            <p>
-              I am also continuing to expand my knowledge in AI-assisted
-              workflows and productivity tools. I have completed certifications
-              in ChatGPT and Claude through Coursiv.io and I am currently
-              working on a Perplexity certification focused on practical AI
-              research and productivity.
-            </p>
-
-            <p>
-              Outside of development, I enjoy cooking, sewing, crafting,
-              gardening, reading, and spending time outdoors. These creative
-              interests help me stay curious, detail-oriented, and thoughtful in
-              how I approach problem-solving, design, and user experience.
+              Outside of development, I enjoy creative activities like cooking,
+              sewing, crafting, and gardening, along with reading and spending
+              time outdoors. These interests reinforce my attention to detail,
+              creativity, and problem-solving, which I bring into my work as a
+              developer.
             </p>
           </div>
 
           <aside className="about__profile-card">
-  <img src="/headshot.jpg" alt="Beth Kenward" className="about__image" />
-  <h2>Elizabeth “Beth” Kenward</h2>
-  <p>Frontend Developer</p>
-  <p>Project & Operations Coordinator</p>
-</aside>
+            <img
+              src="/headshot.jpg"
+              alt="Elizabeth Beth Kenward"
+              className="about__image"
+            />
 
-          <aside className="about__card">
-            <h2 className="about__card-title">Skills & Tools</h2>
+            <h2>Elizabeth “Beth” Kenward</h2>
+            <p>Frontend Developer</p>
+            <p>Project & Operations Coordinator</p>
 
-            <div className="about__tags">
-              <span className="about__tag">Project Coordination</span>
-              <span className="about__tag">Operations Support</span>
-              <span className="about__tag">Workflow Management</span>
-              <span className="about__tag">Process Improvement</span>
-              <span className="about__tag">Administrative Support</span>
-              <span className="about__tag">Documentation Management</span>
-              <span className="about__tag">Cross-Functional Collaboration</span>
-              <span className="about__tag">Client Communication</span>
-              <span className="about__tag">React</span>
-              <span className="about__tag">TypeScript</span>
-              <span className="about__tag">JavaScript</span>
-              <span className="about__tag">REST APIs</span>
-              <span className="about__tag">Firebase</span>
-              <span className="about__tag">HTML5</span>
-              <span className="about__tag">CSS3</span>
-              <span className="about__tag">Git</span>
-              <span className="about__tag">GitHub</span>
-              <span className="about__tag">Vercel</span>
+            <div className="about__profile-details">
+              <div>
+                <span>Focus</span>
+                <strong>React & TypeScript</strong>
+              </div>
+
+              <div>
+                <span>Experience</span>
+                <strong>15+ years</strong>
+              </div>
+
+              <div>
+                <span>Based in</span>
+                <strong>United States</strong>
+              </div>
+
+              <div>
+                <span>Status</span>
+                <strong className="about__status">Open to work</strong>
+              </div>
             </div>
           </aside>
         </div>
-      </section>
 
-      <section className="about__certifications">
-  <div className="about__certifications-header">
-    <h2 className="about__certifications-title">
-      Certifications & Learning
-    </h2>
-
-    <p className="about__certifications-intro">
-      I continue building practical skills across frontend development,
-      AI-powered workflows, documentation, research, and modern productivity
-      tools.
-    </p>
-  </div>
-
-  <div className="about__certifications-grid">
-    {[
-      {
-        name: "Frontend Simplified",
-        provider: "FES Institute",
-        detail: "Frontend Development Certificate",
-        href: "/fes-certificate.pdf",
-      },
-      {
-        name: "ChatGPT Certification",
-        provider: "Coursiv.io",
-        detail: "Practical AI Tooling & Workflow Applications",
-        href: "/ChatGPT.pdf",
-      },
-      {
-        name: "Claude Certification",
-        provider: "Coursiv.io",
-        detail: "Practical AI Tooling & Workflow Applications",
-        href: "/Claude.pdf",
-      },
-      {
-        name: "Perplexity Certification",
-        provider: "Coursiv.io",
-        detail: "Practical AI Tooling & Workflow Applications",
-        href: "/Perplexity.pdf",
-      },
-      {
-        name: "Gemini Certification",
-        provider: "Coursiv.io",
-        detail: "Practical AI Tooling & Workflow Applications",
-        href: "/Gemini.pdf",
-      },
-      {
-        name: "Midjourney Certification",
-        provider: "Coursiv.io",
-        detail: "Practical AI Tooling & Workflow Applications",
-        href: "/Midjourney.pdf",
-      },
-      {
-        name: "Canva AI Certification",
-        provider: "Coursiv.io",
-        detail: "Practical AI Tooling & Workflow Applications",
-        href: "/Canva AI.pdf",
-      },
-      {
-        name: "VEO Certification",
-        provider: "Coursiv.io",
-        detail: "Practical AI Tooling & Workflow Applications",
-        href: "/Veo.pdf",
-      },
-      {
-        name: "Kling Certification",
-        provider: "Coursiv.io",
-        detail: "Practical AI Research & Productivity Tooling",
-        status: "In Progress",
-      },
-    ].map((certificate) => (
-      <article className="about__certification-card" key={certificate.name}>
-        <div className="about__certification-card-header">
-          <FaAward className="about__certification-icon" />
+        <section className="about__stats">
+          <div>
+            <strong>15+</strong>
+            <span>Years in operations</span>
+          </div>
 
           <div>
-            <h3 className="about__certification-name">
-              {certificate.name}
-            </h3>
+            <strong>10+</strong>
+            <span>Projects built</span>
+          </div>
 
-            <p className="about__certification-provider">
-              {certificate.provider}
-            </p>
+          <div>
+            <strong>9+</strong>
+            <span>AI certifications</span>
+          </div>
+        </section>
+
+        <section className="about__skills">
+  <p className="about__eyebrow">Skills & Tools</p>
+
+  <h2 className="about__skills-title">
+    Operations expertise meets front-end craft.
+  </h2>
+
+  <div className="about__operations-tags">
+    <span>Project Coordination</span>
+    <span>Operations Support</span>
+    <span>Workflow Management</span>
+    <span>Process Improvement</span>
+    <span>Administrative Support</span>
+    <span>Documentation Management</span>
+    <span>Cross-Functional Collaboration</span>
+    <span>Client Communication</span>
+  </div>
+
+  <div className="about__tech-tags">
+    <span>React</span>
+    <span>TypeScript</span>
+    <span>JavaScript</span>
+    <span>REST APIs</span>
+    <span>Firebase</span>
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>Git</span>
+    <span>GitHub</span>
+    <span>Vercel</span>
+  </div>
+</section>
+
+        <section className="about__certifications">
+  <p className="about__eyebrow">Certifications & Learning</p>
+
+  <h2 className="about__certifications-title">
+    Always building practical skills.
+  </h2>
+
+  <div className="about__cert-grid">
+    {certifications.map((cert) => (
+      <article className="about__cert-card" key={cert.title}>
+        <div className="about__cert-top">
+          <div className="about__cert-icon">
+            <FiAward />
+          </div>
+
+          <div>
+            <h3>{cert.title}</h3>
+            <p className="about__cert-source">{cert.source}</p>
           </div>
         </div>
 
-        <p className="about__certification-detail">
-          {certificate.detail}
-        </p>
+        <p className="about__cert-description">{cert.description}</p>
 
-        {certificate.status ? (
-          <span className="about__certification-status">
-            {certificate.status}
-          </span>
-        ) : (
+        {cert.file ? (
           <a
-            href={certificate.href}
+            href={cert.file}
             target="_blank"
-            rel="noopener noreferrer"
-            className="about__certification-link"
+            rel="noreferrer"
+            className="about__cert-link"
           >
-            View Certificate
+            View Certificate →
           </a>
+        ) : (
+          <span className="about__cert-link about__cert-link--disabled">
+            In Progress
+          </span>
         )}
       </article>
     ))}
   </div>
 </section>
+      </section>
     </main>
   );
 }
