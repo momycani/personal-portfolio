@@ -12,6 +12,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  title: "Gramma’s Garden",
+  description:
+    "A colorful React and TypeScript garden-themed project featuring playful character visuals, responsive layouts, polished component styling, and a cheerful user interface as part of the Gramma’s Place project series.",
+  tech: ["React", "TypeScript", "Vite", "CSS", "Responsive Design"],
+  image: "/grammas-garden.png",
+  live: "https://grammas-garden.vercel.app/",
+  github: "https://github.com/momycani/grammas-garden",
+  category: "apps",
+},
+  {
     title: "CredentialFlow Dashboard",
     description:
       "A React and TypeScript healthcare operations project inspired by Medical Staff Office credentialing workflows with mock provider data, search, filters, risk indicators, and review notes.",

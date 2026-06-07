@@ -7,7 +7,7 @@ export default function Navbar() {
         <a href="#home" className="navbar__brand" aria-label="Go to home section">
           <span className="navbar__name">Elizabeth “Beth” Kenward</span>
           <span className="navbar__subtitle">
-            Frontend Developer · Operations Background
+            Administrative & Operations Coordinator • Frontend Development
           </span>
         </a>
 

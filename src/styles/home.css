@@ -53,6 +53,10 @@
   color: var(--text-main);
 }
 
+.hero__title span {
+  color: #c47435;
+}
+
 .hero__highlight {
   color: var(--primary);
 }

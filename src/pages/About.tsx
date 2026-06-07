@@ -70,21 +70,20 @@ export default function About() {
             experiences.
           </h1>
 
-          <p className="about__intro">
-            A Frontend Developer and Project & Operations Coordinator with a
-            background in workflow management, process improvement, and building
-            practical applications that solve real business problems.
+          <p className="about__intro">I’m an{" "}
+            <span className="about__highlight">Administrative & Operations Coordinator</span>{" "}
+            with 15+ years of experience supporting teams, managing details,
+            improving workflows, and keeping business operations organized — with
+            additional{" "}
+            <span className="about__highlight">Frontend Development</span> skills in
+            React and TypeScript.
           </p>
         </div>
 
         <div className="about__content">
           <div className="about__text">
             <p>
-              My professional background combines front-end development with
-              more than 15 years of experience supporting operations,
-              coordinating workflows, managing documentation, improving
-              organizational processes, and helping teams stay organized across
-              multiple industries.
+              My professional background combines 15+ years of administrative, operations, HR, payroll, property, and workflow coordination experience with frontend development skills used to build practical digital projects that solve real business problems.
             </p>
 
             <p>
@@ -176,18 +175,20 @@ export default function About() {
   <p className="about__eyebrow">Skills & Tools</p>
 
   <h2 className="about__skills-title">
-    Operations expertise meets front-end craft.
+    Administrative operations meets frontend craft.
   </h2>
 
   <div className="about__operations-tags">
-    <span>Project Coordination</span>
+    <span>Administrative Support</span>    
     <span>Operations Support</span>
+    <span>Project Coordination</span>
     <span>Workflow Management</span>
-    <span>Process Improvement</span>
-    <span>Administrative Support</span>
     <span>Documentation Management</span>
+    <span>Records Management</span>
+    <span>Process Improvement</span>
+    <span>Client Communication</span>    
     <span>Cross-Functional Collaboration</span>
-    <span>Client Communication</span>
+    
   </div>
 
   <div className="about__tech-tags">

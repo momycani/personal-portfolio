@@ -8,22 +8,16 @@ export default function Home() {
       <section className="hero">
         <div className="hero__content">
           <p className="hero__eyebrow">
-            Frontend Developer · Operations Background
+            Administrative & Operations Coordinator • Frontend Development
           </p>
 
           <h1 className="hero__title">
-            Hi, I&apos;m Beth.
-            <br />
-            I build{" "}
-            <span className="hero__highlight">clean, responsive</span>
-            <br />
-            web experiences.
+            Hi, I'm Beth. I organize work, support teams, and build{" "}
+            <span>practical digital tools.</span>
           </h1>
 
           <p className="hero__text">
-            I create modern web applications using React and TypeScript,
-            focusing on intuitive UI and seamless user experiences — built on
-            15+ years of keeping teams, workflows, and operations organized.
+            I bring 15+ years of administrative, operations, HR, payroll, property, and workflow coordination experience — along with React and TypeScript skills used to build organized, responsive digital projects.
           </p>
 
           <div className="hero__buttons">

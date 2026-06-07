@@ -359,6 +359,11 @@
   text-decoration: none;
 }
 
+.about__highlight {
+  color: #c47435;
+  font-weight: 700;
+}
+
 /* Responsive */
 
 @media (max-width: 1200px) {
