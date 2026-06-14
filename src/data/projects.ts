@@ -12,6 +12,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  title: "AdminFlow Office Operations Dashboard",
+  description:
+    "A React and TypeScript administrative operations dashboard for tracking work orders, vendor contacts, office equipment, service plans, supply inventory, renewal alerts, and follow-up workflows.",
+  tech: ["React", "TypeScript", "Vite", "CSS", "Responsive Design"],
+  image: "/adminflow-operations.png",
+  live: "https://adminflow-office-operations-dashboa.vercel.app/",
+  github: "https://github.com/momycani/adminflow-office-operations-dashboard",
+  category: "dashboards",
+},
+  {
   title: "Gramma’s Garden",
   description:
     "A colorful React and TypeScript garden-themed project featuring playful character visuals, responsive layouts, polished component styling, and a cheerful user interface as part of the Gramma’s Place project series.",
@@ -76,7 +86,7 @@ export const projects: Project[] = [
     description:
       "A responsive React and TypeScript app for AI-powered skin analysis with image upload/capture flow, dynamic routing, and optimized component structure.",
     tech: ["React", "TypeScript", "REST APIs", "CSS", "React Router"],
-    image: "/skinstric_cover.jpg",
+    image: "/skinstric-cover.jpg",
     live: "https://beth-skinstric-internship.vercel.app/",
     github: "https://github.com/momycani/skinstric-internship",
     category: "apps",
