@@ -1,4 +1,4 @@
-export type ProjectCategory = "dashboards" | "apps" | "clones";
+export type ProjectCategory = "dashboards" | "apps" | "clones" | "operations";
 
 export type Project = {
   title: string;
@@ -11,6 +11,27 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+  title: "Legal Operations Case Management Dashboard",
+  description:
+  "Excel-based operations dashboard using simulated legal service case data to track case volume, open work, SLA risk, escalations, average days open, department volume, and recommended follow-up actions. Built with formulas, XLOOKUP, PivotTables, PivotCharts, conditional formatting, and dashboard summaries to support operations reporting and process improvement.",
+  tech: [
+  "Excel",
+  "PivotTables",
+  "PivotCharts",
+  "XLOOKUP",
+  "COUNTIFS",
+  "SUMIFS",
+  "AVERAGEIF",
+  "Conditional Formatting",
+  "Dashboard Reporting",
+  "Operations Analysis"
+  ],
+  image: "/legal-operations-dashboard.png",
+  live: "/legal-operations-dashboard.pdf",
+  github: "",
+  category: "operations",
+  },
   {
   title: "AdminFlow Office Operations Dashboard",
   description:

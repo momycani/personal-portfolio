@@ -9,6 +9,7 @@ const filters: { label: string; value: Filter }[] = [
   { label: "All", value: "all" },
   { label: "Dashboards", value: "dashboards" },
   { label: "Apps", value: "apps" },
+  { label: "Operations", value: "operations" },
   { label: "Clones", value: "clones" },
 ];
 

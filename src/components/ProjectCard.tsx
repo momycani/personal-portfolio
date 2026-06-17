@@ -34,17 +34,19 @@ export default function ProjectCard({
             rel="noopener noreferrer"
             className="project-card__button project-card__button--primary"
           >
-            Live Demo
+            View Project
           </a>
 
-          <a
-            href={github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-card__button project-card__button--secondary"
-          >
-            GitHub
-          </a>
+          {github && (
+  <a
+    href={github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="project-card__button project-card__button--secondary"
+  >
+    GitHub
+  </a>
+)}
         </div>
       </div>
     </article>
