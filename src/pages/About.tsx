@@ -9,6 +9,12 @@ const certifications = [
     file: "/Frontend-Simplified-Certificate.pdf",
   },
   {
+  title: "Procore Project Manager",
+  source: "Procore Technologies",
+  description: "Project Management - General Contractor Certification",
+  file: "/Procore-Certification.pdf",
+},
+  {
     title: "ChatGPT Certification",
     source: "Coursiv.io",
     description: "Practical AI Tooling & Workflow Applications",
@@ -61,63 +67,78 @@ const certifications = [
 export default function About() {
   return (
     <main id="about" className="about">
-      <section className="about__container">
-        <div className="about__header">
-          <p className="about__eyebrow">About Me</p>
+  <section className="about__container">
+    <div className="about__header">
+      <p className="about__eyebrow">About Me</p>
 
-          <h1 className="about__title">
-            Coordinating projects and building thoughtful, user-friendly web
-            experiences.
-          </h1>
+      <h1 className="about__title">
+        Coordinating projects, organizing workflows, and building practical tools
+        that make work easier to manage.
+      </h1>
 
-          <p className="about__intro">I’m an{" "}
-            <span className="about__highlight">Administrative & Operations Coordinator</span>{" "}
-            with 15+ years of experience supporting teams, managing details,
-            improving workflows, and keeping business operations organized — with
-            additional{" "}
-            <span className="about__highlight">Frontend Development</span> skills in
-            React and TypeScript.
-          </p>
-        </div>
+      <p className="about__intro">
+        I’m an{" "}
+        <span className="about__highlight">
+          Administrative, Operations, and Project Coordinator
+        </span>{" "}
+        with 15+ years of experience supporting teams, managing documentation,
+        improving workflows, and keeping business operations organized, with
+        additional{" "}
+        <span className="about__highlight">Frontend Development</span>{" "}
+        skills in React and TypeScript and a{" "}
+        <span className="about__highlight">Procore Project Manager</span>{" "}
+        certification.
+      </p>
+    </div>
 
-        <div className="about__content">
-          <div className="about__text">
-            <p>
-              My professional background combines 15+ years of administrative, operations, HR, payroll, property, and workflow coordination experience with frontend development skills used to build practical digital projects that solve real business problems.
-            </p>
+    <div className="about__content">
+      <div className="about__text">
+        <p>
+          My professional background combines 15+ years of administrative,
+          operations, HR, payroll, property, documentation, and workflow
+          coordination experience with frontend development skills used to build
+          practical digital projects that solve real business problems.
+        </p>
 
-            <p>
-              Before transitioning into development, I worked in administrative,
-              operations, property management, office management, and
-              coordination-focused roles where I supported onboarding,
-              scheduling, records management, payroll and timekeeping audits,
-              compliance-related documentation, billing, tenant and client
-              communication, and day-to-day business operations.
-            </p>
+        <p>
+          I have supported fast-moving office and operations environments where
+          accuracy, follow-through, communication, and organization mattered
+          every day. My experience includes onboarding support, scheduling,
+          records management, payroll and timekeeping audits, compliance-related
+          documentation, billing, vendor coordination, tenant and client
+          communication, and day-to-day business operations.
+        </p>
 
-            <p>
-              Today, I bring that same organized, detail-oriented mindset into
-              the applications I build. I use React, TypeScript, JavaScript,
-              Firebase, REST APIs, HTML, CSS, GitHub, and Vercel to create
-              responsive web applications focused on usability, structure, and
-              practical functionality.
-            </p>
+        <p>
+          I recently completed the Procore Project Manager: Project Management -
+          General Contractor certification, strengthening my understanding of
+          construction project workflows, including RFIs, submittals, drawings,
+          meetings, photos, schedules, specifications, and field-to-office
+          coordination.
+        </p>
 
-            <p>
-              Many of my projects reflect the type of work I’ve supported
-              throughout my career, including dashboards, workflow systems,
-              onboarding tools, project tracking, and interfaces that make
-              information easier to manage and understand.
-            </p>
+        <p>
+          Today, I bring that same organized, detail-oriented mindset into the
+          applications I build. I use React, TypeScript, JavaScript, Firebase,
+          REST APIs, HTML, CSS, GitHub, and Vercel to create responsive web
+          applications focused on usability, structure, and practical
+          functionality.
+        </p>
 
-            <p>
-              Outside of development, I enjoy creative activities like cooking,
-              sewing, crafting, and gardening, along with reading and spending
-              time outdoors. These interests reinforce my attention to detail,
-              creativity, and problem-solving, which I bring into my work as a
-              developer.
-            </p>
-          </div>
+        <p>
+          Many of my projects reflect the type of work I’ve supported throughout
+          my career, including dashboards, workflow systems, onboarding tools,
+          project tracking, document templates, and interfaces that make
+          information easier to manage and understand.
+        </p>
+
+        <p>
+          Outside of work, I enjoy creative activities like cooking, sewing,
+          crafting, and gardening, along with reading and spending time outdoors.
+          These interests reinforce the creativity, attention to detail, and
+          problem-solving approach I bring into both operations and project work.
+        </p>
+      </div>
 
           <aside className="about__profile-card">
             <img
@@ -171,38 +192,46 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about__skills">
+       <section className="about__skills">
   <p className="about__eyebrow">Skills & Tools</p>
 
   <h2 className="about__skills-title">
-    Administrative operations meets frontend craft.
+    Project coordination, operations support, and practical frontend tools.
   </h2>
 
   <div className="about__operations-tags">
-    <span>Administrative Support</span>    
-    <span>Operations Support</span>
     <span>Project Coordination</span>
-    <span>Workflow Management</span>
+    <span>Administrative Support</span>
+    <span>Operations Support</span>
     <span>Documentation Management</span>
+    <span>Workflow Management</span>
     <span>Records Management</span>
     <span>Process Improvement</span>
-    <span>Client Communication</span>    
+    <span>Vendor Coordination</span>
+    <span>Client Communication</span>
     <span>Cross-Functional Collaboration</span>
-    
+    <span>Construction Project Workflows</span>
+    <span>RFIs & Submittals</span>
+    <span>Drawings & Specifications</span>
+    <span>Meeting & Schedule Coordination</span>
+    <span>Procore</span>
   </div>
 
+
   <div className="about__tech-tags">
-    <span>React</span>
-    <span>TypeScript</span>
-    <span>JavaScript</span>
-    <span>REST APIs</span>
-    <span>Firebase</span>
-    <span>HTML5</span>
-    <span>CSS3</span>
-    <span>Git</span>
-    <span>GitHub</span>
-    <span>Vercel</span>
-  </div>
+  <span>React</span>
+  <span>TypeScript</span>
+  <span>JavaScript</span>
+  <span>REST APIs</span>
+  <span>Firebase</span>
+  <span>HTML5</span>
+  <span>CSS3</span>
+  <span>Responsive Design</span>
+  <span>Git</span>
+  <span>GitHub</span>
+  <span>Vite</span>
+  <span>Vercel</span>
+</div>
 </section>
 
         <section className="about__certifications">

@@ -8,17 +8,21 @@ export default function Home() {
       <section className="hero">
         <div className="hero__content">
           <p className="hero__eyebrow">
-            Administrative & Operations Coordinator • Frontend Development
-          </p>
+  Project & Administrative Coordination • Frontend Tools
+</p>
 
-          <h1 className="hero__title">
-            Hi, I'm Beth. I organize work, support teams, and build{" "}
-            <span>practical digital tools.</span>
-          </h1>
+<h1 className="hero__title">
+  Hi, I'm Beth. I organize work, support teams, and build{" "}
+  <span>practical digital tools.</span>
+</h1>
 
-          <p className="hero__text">
-            I bring 15+ years of administrative, operations, HR, payroll, property, and workflow coordination experience — along with React and TypeScript skills used to build organized, responsive digital projects.
-          </p>
+<p className="hero__text">
+  I bring 15+ years of administrative, operations, HR, payroll, property,
+  documentation, and workflow coordination experience, along with React and
+  TypeScript skills used to build organized, responsive digital projects. I
+  recently completed the Procore Project Manager certification to strengthen my
+  construction project coordination knowledge.
+</p>
 
           <div className="hero__buttons">
             <a href="#projects" className="hero__button hero__button--primary">
@@ -94,46 +98,58 @@ export default function Home() {
         </div>
 
         <div className="hero__collage" aria-label="Featured projects">
-          <a
-            href="https://beth-mod-10-internship.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hero__project-card hero__project-card--main"
-          >
-            <img src="/summarist-home.png" alt="Summarist project preview" />
-            <div>
-              <span>Featured Project</span>
-              <h3>Summarist</h3>
-              <p>React • TypeScript • Firebase</p>
-            </div>
-          </a>
+  <a
+    href="https://projectops-dashboard.vercel.app"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hero__project-card hero__project-card--main"
+  >
+    <div className="hero__project-image">
+      <img src="/projectops.png" alt="ProjectOps Dashboard preview" />
+    </div>
 
-          <a
-            href="https://mod-6-final-project.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hero__project-card hero__project-card--small hero__project-card--left"
-          >
-            <img src="/3593-v2.jpg" alt="Movie Explorer project preview" />
-            <div>
-              <h3>Movie Explorer</h3>
-              <p>API • React • CSS</p>
-            </div>
-          </a>
+    <div className="hero__project-copy">
+      <span>Featured Project</span>
+      <h3>ProjectOps Dashboard</h3>
+      <p>Project Tracking • Risk Logs • Status Updates</p>
+    </div>
+  </a>
 
-          <a
-            href="https://beth-skinstric-internship.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hero__project-card hero__project-card--small hero__project-card--right"
-          >
-            <img src="/skinstric_cover.jpg" alt="Skinstric project preview" />
-            <div>
-              <h3>Skinstric</h3>
-              <p>React • TypeScript</p>
-            </div>
-          </a>
-        </div>
+  <a
+    href="https://docuflow-template-manager.vercel.app"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hero__project-card hero__project-card--small hero__project-card--left"
+  >
+    <div className="hero__project-image">
+      <img src="/docuflow.png" alt="DocuFlow Template Manager preview" />
+    </div>
+
+    <div className="hero__project-copy">
+      <h3>DocuFlow</h3>
+      <p>Templates • Documentation • Workflow</p>
+    </div>
+  </a>
+
+  <a
+    href="https://client-onboarding-workflow-dashboar.vercel.app"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hero__project-card hero__project-card--small hero__project-card--right"
+  >
+    <div className="hero__project-image">
+      <img
+        src="/clientonboarding.png"
+        alt="Client Onboarding Workflow Dashboard preview"
+      />
+    </div>
+
+    <div className="hero__project-copy">
+      <h3>Client Onboarding</h3>
+      <p>Milestones • Tasks • Client Tracking</p>
+    </div>
+  </a>
+</div>
       </section>
 
       <section className="tech-marquee" aria-label="Technology stack">
