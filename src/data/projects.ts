@@ -12,6 +12,56 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  title: "CloseoutFlow Project Closeout Dashboard",
+  description:
+    "A React and TypeScript project closeout dashboard for tracking handoff requirements, document status, vendor follow-up, inspections, approvals, outstanding items, and completion progress.",
+  tech: ["React", "TypeScript", "Vite", "CSS", "localStorage", "Responsive Design"],
+  image: "/closeout-projects.png",
+  live: "https://closeoutflow.vercel.app/",
+  github: "https://github.com/momycani/closeoutflow",
+  category: "dashboards",
+},
+{
+  title: "StateSync Operations Dashboard",
+  description:
+    "A React and TypeScript operations dashboard for tracking work items, priorities, department workloads, deadlines, team activity, and completion status through searchable and filterable workflows.",
+  tech: ["React", "TypeScript", "Context API", "Vite", "CSS", "localStorage", "Responsive Design"],
+  image: "/statesync-dashboard.png",
+  live: "https://statesync-operations-dashboard.vercel.app/",
+  github: "https://github.com/momycani/statesync-operations-dashboard",
+  category: "dashboards",
+},
+{
+  title: "JobSearch To Do",
+  description:
+    "A TypeScript job-search task manager for organizing weekly goals, applications, networking, follow-ups, deadlines, and completed activities with persistent local storage.",
+  tech: ["TypeScript", "Vite", "CSS", "localStorage", "Responsive Design"],
+  image: "/jobsearch-todo.png",
+  live: "https://job-search-todo.vercel.app/",
+  github: "https://github.com/momycani/job-search-todo",
+  category: "dashboards",
+},
+{
+  title: "PropFlow Property Operations Dashboard",
+  description:
+    "A React and TypeScript property operations dashboard for tracking maintenance requests, vendor coordination, inspections, compliance follow-ups, and priorities across multiple property types.",
+  tech: ["React", "TypeScript", "Vite", "CSS", "Responsive Design"],
+  image: "/propflow-dashboard.png",
+  live: "https://propflow-property-operations-dashbo.vercel.app/",
+  github: "https://github.com/momycani/propflow-property-operations-dashboard",
+  category: "dashboards",
+},
+{
+  title: "SearchOps Executive Search Dashboard",
+  description:
+    "A React and TypeScript executive search operations dashboard for tracking active searches, candidate pipelines, interview scheduling, document status, client updates, and priority follow-ups.",
+  tech: ["React", "TypeScript", "Vite", "CSS", "Responsive Design"],
+  image: "/searchops-dashboard.png",
+  live: "https://searchops-executive-search-dashboar.vercel.app/",
+  github: "https://github.com/momycani/searchops-executive-search-dashboard",
+  category: "dashboards",
+},
+  {
   title: "Legal Operations Case Management Dashboard",
   description:
   "Excel-based operations dashboard using simulated legal service case data to track case volume, open work, SLA risk, escalations, average days open, department volume, and recommended follow-up actions. Built with formulas, XLOOKUP, PivotTables, PivotCharts, conditional formatting, and dashboard summaries to support operations reporting and process improvement.",

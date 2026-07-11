@@ -182,7 +182,7 @@ export default function About() {
           </div>
 
           <div>
-            <strong>10+</strong>
+            <strong>16+</strong>
             <span>Projects built</span>
           </div>
 
