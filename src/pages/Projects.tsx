@@ -11,6 +11,7 @@ const filters: { label: string; value: Filter }[] = [
   { label: "Apps", value: "apps" },
   { label: "Operations", value: "operations" },
   { label: "Clones", value: "clones" },
+  { label: "Websites", value: "websites" },
 ];
 
 export default function Projects() {

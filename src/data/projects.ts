@@ -1,4 +1,4 @@
-export type ProjectCategory = "dashboards" | "apps" | "clones" | "operations";
+export type ProjectCategory = "dashboards" | "apps" | "clones" | "operations" | "websites";
 
 export type Project = {
   title: string;
@@ -11,6 +11,16 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+  title: "Sierra Facility Services",
+  description:
+    "A responsive React and TypeScript website for a commercial facility services company, presenting property maintenance, inspections, vendor coordination, project closeout, and service request information.",
+  tech: ["React", "TypeScript", "React Router", "Vite", "CSS", "Responsive Design", "Accessibility"],
+  image: "/sierra-facility-services.png",
+  live: "https://sierra-facility-services.vercel.app/",
+  github: "https://github.com/momycani/sierra-facility-services",
+  category: "websites",
+},
   {
   title: "CloseoutFlow Project Closeout Dashboard",
   description:
