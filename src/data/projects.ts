@@ -12,6 +12,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  title: "Juniper House Inn",
+  description:
+    "A responsive React and TypeScript website for a fictional Northern Nevada boutique inn, featuring interactive room galleries, seasonal activity filters, amenities, reservation planning, and live stay estimates.",
+  tech: ["React", "TypeScript", "Vite", "CSS", "Responsive Design", "Accessibility"],
+  image: "/juniper-house-inn.png",
+  live: "https://juniper-house-inn.vercel.app/",
+  github: "https://github.com/momycani/juniper-house-inn",
+  category: "websites",
+},
+  {
   title: "Sierra Facility Services",
   description:
     "A responsive React and TypeScript website for a commercial facility services company, presenting property maintenance, inspections, vendor coordination, project closeout, and service request information.",
