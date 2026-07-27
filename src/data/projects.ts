@@ -12,6 +12,25 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  title: "OpsPilot AI",
+  description:
+    "An AI-powered React and TypeScript project coordination dashboard that analyzes project updates, identifies risks and action items, drafts follow-up communications, supports human review, and generates executive reports.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "CSS",
+    "OpenAI API",
+    "Vercel Functions",
+    "Responsive Design",
+    "Accessibility",
+  ],
+  image: "/opspilot-ai.png",
+  live: "https://opspilot-ai-sable.vercel.app/",
+  github: "https://github.com/momycani/opspilot-ai",
+  category: "apps",
+},
+  {
   title: "Juniper House Inn",
   description:
     "A responsive React and TypeScript website for a fictional Northern Nevada boutique inn, featuring interactive room galleries, seasonal activity filters, amenities, reservation planning, and live stay estimates.",
