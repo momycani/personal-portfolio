@@ -12,6 +12,25 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  title: "Reno AutoWorks",
+  description:
+    "A responsive React and TypeScript automotive service website featuring preliminary estimates, appointment scheduling, multi-vehicle service tracking, maintenance reminders, and persistent customer records.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "CSS",
+    "Lucide React",
+    "localStorage",
+    "Responsive Design",
+    "Accessibility",
+  ],
+  image: "/reno-autoworks.png",
+  live: "https://reno-autoworks.vercel.app/",
+  github: "https://github.com/momycani/reno-autoworks",
+  category: "websites",
+},
+  {
   title: "OpsPilot AI",
   description:
     "An AI-powered React and TypeScript project coordination dashboard that analyzes project updates, identifies risks and action items, drafts follow-up communications, supports human review, and generates executive reports.",
@@ -139,7 +158,7 @@ export const projects: Project[] = [
   image: "/grammas-garden.png",
   live: "https://grammas-garden.vercel.app/",
   github: "https://github.com/momycani/grammas-garden",
-  category: "apps",
+  category: "websites",
 },
   {
     title: "CredentialFlow Dashboard",
