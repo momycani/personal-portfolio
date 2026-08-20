@@ -86,7 +86,7 @@ export default function Home() {
             </div>
 
             <div className="hero__stat">
-              <strong>16+</strong>
+              <strong>20+</strong>
               <span>Projects built</span>
             </div>
 

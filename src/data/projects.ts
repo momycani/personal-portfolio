@@ -12,6 +12,25 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  title: "Polished & Co. Salon",
+  description:
+    "A responsive React and TypeScript salon website featuring stylist profiles, service pricing and durations, multi-step appointment booking, gift card customization, gallery filtering, and persistent appointment management.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "React Router",
+    "CSS",
+    "localStorage",
+    "Responsive Design",
+    "Accessibility",
+  ],
+  image: "/polished-co-salon.png",
+  live: "https://polished-co-salon.vercel.app/",
+  github: "https://github.com/momycani/polished-co-salon",
+  category: "websites",
+},
+  {
   title: "Reno AutoWorks",
   description:
     "A responsive React and TypeScript automotive service website featuring preliminary estimates, appointment scheduling, multi-vehicle service tracking, maintenance reminders, and persistent customer records.",
